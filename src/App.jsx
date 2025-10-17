@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-// Update these paths to point to the new Pages folder
-import Login from './Pages/Login';
-import Register from './Pages/Register';
-import Home from './Home';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
+import Home from './Home'; // Make sure this path is correct
 
 const App = () => {
     return (
