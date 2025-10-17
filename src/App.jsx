@@ -1,11 +1,17 @@
-const App = () => {
+import { Routes, Route } from 'react-router-dom';
+// Update these paths to point to the new Pages folder
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import Home from './Home';
 
+const App = () => {
     return (
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+        </Routes>
     )
 }
 
-
-export default App
+export default App;
